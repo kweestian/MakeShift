@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"> -->
+
+  <!-- Latest compiled and minified JavaScript -->
+  <!-- // <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+  <!--
+    normalize.css removes cross-browser differences in defaults, e.g.,
+    differences in how form elements appear between Firefox and IE
+    See: http://necolas.github.com/normalize.css/
+  -->
+  <link rel="stylesheet" href="/stylesheets/normalize.css">
+  <!--
+    application.css is where you put your styles
+  -->
+  <link rel="stylesheet" href="/stylesheets/application.css">
+
+  <link href='http://fonts.googleapis.com/css?family=Megrim' rel='stylesheet' type='text/css'>
+  <!-- <link href='http://fonts.googleapis.com/css?family=Tenor+Sans' rel='stylesheet' type='text/css'> -->
+  <!-- <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'> -->
+  <!-- <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'> -->
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="/javascript/application.js"></script>
+
+  <title></title>
+</head>
+<body> 
+  <div class='menu'>
+  <ul class="navbar">
+    <li class="rightborder">
+      <div class="navitem in">
+        <%=session[:user]%>
+      </div>
+
+    </li>
+    <li class="leftborder">
+      <div class="navitem">
+        <a href="/profile">PROFILE</a>
+      </div>
+      <div class="image1"></div>
+    </li>
+    <li class="leftborder">
+      <div class="navitem">
+        <a href="/create">CREATE PROJECT</a>
+      </div>
+      <div class="image2"></div>
+    </li>
+    <li class="leftborder">
+      <div class="navitem">
+        <a href="/find">FIND PROJECTS</a>
+      </div>
+      <div class="image1"></div>
+    </li>
+    <li class="leftborder">
+      <div class="navitem">
+        <a href="/login">LOGIN</a>
+      </div>
+      <div class="image">
+      </div>
+    </li>
+  </ul>
+  </div>
+  <%= yield %>
+  <div class="container main">
+    <article class='glass'>
+      <div class='side'>
+        <h1 class='toggle'></h1>
+        <div class="togglebottom"></div>
+      </div>
+      
+    </article>
+  </div>
+</body>
+</html>
+
+
+
+

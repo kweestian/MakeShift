@@ -1,0 +1,54 @@
+<body>
+
+<div class="container overall">
+<div class="col-md-4">
+
+<div class="panel panel-default one">
+  <div class="panel-body image"> 
+    <img src= "<%= @projects.photo %>"></a>
+  </div>
+</div>
+
+<div class="panel panel-default two">
+  <div class="panel-heading-three">
+    <h3 class="panel-title">Materials</h3>
+  </div>
+    <div class="panel-body">
+      <ul>
+    <% @projects.materials.all.each do |material| %>
+      <div class="individual_materials">
+        <li class = "material_list_font">
+        <%= material.name %>
+        </li>
+      </div>
+    <%end%>
+    </ul>
+    </div>
+  </div>
+</div>
+
+<div class="container product_page">
+  <h1 class="title_instruction"><%=@projects.name%></h1>
+  <div class="row">
+    <div class="col-md-12"> 
+      <ol id="#myList">
+      <% @projects.guides.all.each do |guide| %>
+        
+              
+          <li>
+            <span class="color_text">     
+              <%= guide.instruction %>
+            </span>
+          </li>
+      
+      <%end%>
+    </ol>  
+    </div>
+  </div>
+</div>
+</div>
+
+</body>
+
+
+

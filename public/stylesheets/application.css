@@ -1,0 +1,778 @@
+/*Search bar at the top of all screens*/
+body {
+  background: url(http://www.guillaumebouvet.com/assets/w1200-q85-p1/bg_home.jpg);
+  background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    font-color: #ff6759;
+    font-family: Droid Sans Mono;
+}
+
+.leftborder{
+  border-left: solid 3px white; 
+  float: right;
+}
+
+.rightborder{
+  border-right: solid 3px white; 
+}
+
+.navitem {
+height: 25px;
+transition: all 0.3s linear;
+width: 165px;
+z-index: -1;
+background: white;
+}
+
+
+.navbar {
+list-style-type: none;
+width: 1207px;
+border-top: solid 3px white;
+margin-left: 27px;
+padding-left: 7px;
+margin-top: 10px;
+z-index: 3;
+position: fixed;
+border-radius: 0;
+}
+
+.navbar li {
+  display:inline-block;
+  padding: 3px;
+  color: white;
+  font-family: Droid Sans Mono;
+  font-weight: bold;
+}
+
+.navbar li a{
+color: #424242;
+font-family: Droid Sans Mono;
+position: relative;
+left: 4%;
+top: 6%;
+width: 97.5%;
+font-size: 15px;
+text-align: center;
+background: transparent;
+border: 1px solid transparent;
+}
+
+input {
+  line-height: normal;
+  background: transparent;
+  border: 1px solid transparent;
+  text-align: center;
+  transition: all 0.3s linear;
+}
+
+input:hover {
+  opacity:0.5;
+  transition: all 0.3s linear;
+}
+
+.menu {
+  color: #FFF;
+  height: 2em;
+  padding: .5em;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.fixed {
+  position: absolute;
+  top: 22px;
+}
+
+
+/*Bottom bar at the bottom of all screens*/
+
+.container.main{
+z-index: 0;
+position: fixed;
+width: 1170px;
+height: 15%;
+width: 100%;
+top: 85%;
+}
+
+.glass {
+position: absolute;
+height: 100%;
+width: 100%;
+background: white;
+-webkit-filter: url('#blur');
+filter: url('#blur');
+-webkit-filter: blur(0px);
+filter: blur(0px);
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+opacity: 1;
+top: 65%;
+left: 20px;
+border-radius: 10px;
+z-index: 1000;
+}
+
+.preload * {
+  transition: none !important;
+}
+
+.glass.up, .glass.up::before {
+  transform: translateY(0);
+  transform: translateY(0) translateZ(0);
+}
+
+.glass, .glass::before {
+  transition: all 0.5s ease-out
+}
+
+.up {
+  top: 113px;
+  height: 100%;
+  transition: all 0.5s ease-out
+}
+
+.side {
+  z-index: -1;
+  position: absolute;
+  width: 56px;
+  height: 70px;
+  border: solid 3px #FFFFFD;
+  left: 2.1%;
+  top: 8px;
+  border-radius: 10px;
+  transition: all 0.5s ease-out;
+}
+
+.sideup {
+  height: 575px;
+  transition: all 0.5s ease-out
+}
+
+/*Dustin's Motherfuckin' Shit */
+
+.panel.panel-default.one {
+border: none;
+border-radius: 10px;
+margin-left: 35px;
+background: rgba(46, 46, 46, 0.9);
+padding-bottom: 0px;
+}
+
+.panel.panel-default.two {
+  border:none;
+  border-radius: 10px;
+  margin-left: 35px;
+  background: rgba(46, 46, 46, 0.9);
+}
+
+.container.product_page {
+border-radius: 10px;
+float: right;
+width: 720px;
+margin-right: 35px;
+padding-bottom: 20px;
+background: rgba(46, 46, 46, 0.9);
+}
+
+.container.overall {
+padding-top: 70px;
+padding-bottom: 160px;
+border-radius: 5px;
+border: solid white;
+top: 70px;
+left: 55px;
+position: absolute;
+}
+
+textarea {
+overflow: auto;
+height: 66px;
+}
+
+
+
+/*logo*/
+
+.curved-text {
+position: absolute;
+color: white;
+font-family: arial;
+font-size: 60px;
+left: -45px;
+top: 0;
+width: 100%;
+text-align: center;
+transition: transform 0.5s ease-out;
+}
+
+.curved-text-under {
+position: absolute;
+color: white;
+font-family: arial;
+font-size: 60px;
+left: 47px;
+top: 56px;
+width: 100%;
+text-align: center;
+transition: transform 0.5s ease-out;
+}
+
+
+.left_side {
+position: absolute;
+width: 260px;
+height: 3px;
+top: 76px;
+right: -5px;
+margin: auto;
+border-style: solid;
+border-color: white;
+background: white;
+transition: transform 0.5s ease-out;
+}
+
+
+.right_side {
+position: absolute;
+width: 85px;
+height: 44px;
+left: 1px;
+top: 85px;
+margin: auto;
+border-style: solid;
+background: white;
+border-color: white;
+transition: transform 0.5s ease-out;
+}
+
+
+.outer-rim {
+position: absolute;
+width: 90px;
+height: 44px;
+left: 171px;
+top: 29px;
+margin: auto;
+background: white;
+transition: transform 0.5s ease-out;
+}
+
+.container.index {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+.logo {
+position: fixed;
+margin-left: 40%;
+margin-right: 40%;
+width: 20%;
+margin-top: 20%;
+margin-bottom: 40%;
+height: 20%;
+}
+
+
+
+/*chris stuff*/
+
+
+.find1 {
+position: absolute;
+border: 3px solid white;
+padding-top: 15px;
+height: 510px;
+width: 1131px;
+border-radius: 5px;
+}
+
+
+.container.cover {
+padding-top: 70px;
+padding-bottom: 100px;
+border-radius: 5px;
+border: solid white;
+top: 70px;
+left: 55px;
+position: absolute;
+height: 87%;
+}
+
+.panel-primary {
+position: absolute;
+right: 250px;
+width: 300px;
+padding-bottom: 10px;
+top:170px;
+border-color: white;
+}
+
+.panel-success {
+position: absolute;
+width: 300px;
+height: 150px;
+left: 250px;
+top: 170px;
+}
+
+.panel-heading-three {
+background-color: white;
+color: #424242;
+height: 40px;
+text-align: center;
+padding: 4px;
+border-bottom: 2px #424242 solid;
+}
+
+/*Login page css*/
+
+.container.log {
+  width:100%;
+  height: 100%;
+}
+
+.login {
+border-right: 3px solid white;
+border-bottom: 3px solid white;
+top: 48px;
+left: 7px;
+position: absolute;
+width: 1062px;
+height: 380px;
+}
+
+.create-user {
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+  top: 48px;
+  left: 7px;
+  position: absolute;
+  width: 1062px;
+  height: 424px;
+}
+
+.username {
+position: absolute;
+width: 360px;
+padding-left: 10px;
+padding-right: 10px;
+left: 445px;
+top: 277px;
+border-color: white;
+border-width: 2px;
+z-index: 1;
+}
+
+.password {
+position: absolute;
+width: 360px;
+padding-left: 10px;
+padding-right: 10px;
+left: 445px;
+top: 315px;
+border-color: white;
+border-width: 2px;
+z-index: 1;
+}
+
+.sidebutton {
+transform: rotate(90deg);
+position: absolute;
+left: 785px;
+top: 300px;
+width: 74px;
+border-radius: 5px;
+background: #FF9D2E;
+color: #FFFFFD;
+border: none;
+z-index: 1;
+}
+
+.login-title {
+width: 109px;
+padding-left: 570px;
+padding-top: 126px;
+border: solid white;
+left: 346px;
+top: 228px;
+position: absolute;
+}
+
+.create-title {
+width: 109px;
+padding-left: 570px;
+padding-top: 126px;
+border: solid white;
+left: 346px;
+top: 228px;
+position: absolute;
+height: 176px;
+}
+
+.in {
+font-size: 15px;
+color: #FF9D2E;
+font-family: Droid Sans Mono;
+padding-left: 40px;
+padding-top: 1px;
+}
+
+.signup.click {
+  position: absolute;
+  top: 354px;
+  left: 487px;
+  color: #FFFFFD;
+}
+
+.email {
+  position: absolute;
+  width: 360px;
+  padding-left: 10px;
+  padding-right: 10px;
+  left: 445px;
+  top: 353px;
+  border-color: white;
+  border-width: 2px;
+  z-index: 1;
+}
+
+/*create page*/
+
+.panel.panel-default.create1 {
+border-radius: 10px;
+height: 200px;
+margin-left: 15px;
+background: rgba(46, 46, 46, 0.9);
+margin-right: 15px;
+}
+
+.panel.panel-default.create2 {
+border-radius: 10px;
+height: 150px;
+margin-left: 15px;
+background: rgba(46, 46, 46, 0.9);
+margin-right: 15px;
+margin-top: 20px;
+}
+
+.container.create_page {
+border-radius: 10px;
+background: rgba(46, 46, 46, 0.9);
+width: 700px;
+margin-right: 39px;
+position: absolute;
+left: 400px;
+top: 18px;
+padding-bottom: 20px;
+padding-left: 60px;
+}
+
+.material-type {
+  width: 130px;
+  margin-right: 3px;
+  margin-left: 15px;
+  border-radius: 10px;
+  padding-left: 4px;
+}
+
+.submit {
+    background-color:#FF9D2E;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 5px;
+    display:block; /* change this from inline-block */
+    width:20%; /* setting the width */
+    margin:0 auto; /* this will center  it */
+    position:relative;
+}
+
+.textbox { 
+    background: white;
+    border: 1px solid; 
+    -webkit-border-radius: 30px; 
+    -moz-border-radius: 30px; 
+    border-radius: 30px; 
+    outline:0; 
+    height:25px; 
+    width: 60%; 
+    padding-left:10px; 
+    padding-right:10px; 
+    margin-top: 10px;
+    margin-bottom: 12px;
+    margin-left: 17%;
+  } 
+
+.instruction-heading {
+text-align: center;
+color: white;
+padding: 4px;
+border-bottom: 2px solid;
+}
+
+/*dustins stuff some more*/
+
+/*.col-md-6 ol {
+    padding: 3px ;
+}*/
+
+
+.col-md-12 ol {
+    list-style-type:decimal;
+}
+
+.col-md-12 li {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 25px;
+    margin-top: 25px;
+    padding: 10px;
+    padding-left: 15px;
+  padding-right: 10px;
+  border: solid 4px #424242;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+.color_text {
+  color: #424242;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.panel-default.panel-heading {
+  color: #FFFFFF;
+  font-size: 1.2em;
+  padding: 10px;
+  padding-left: 15px;
+  border: solid 4px;
+  border-radius: 7px;
+  margin-top: 7px;
+  margin-right: 7px;
+  margin-bottom: 10px;
+  background-color: #FF9D2E;
+}
+
+.panel-heading {
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+}
+
+.panel-default {
+border-color: rgba(42, 42, 42, 0.6) ;
+}
+
+.material_list_font {
+font-family: 'Arial';
+color: white;
+/* font-weight: bold; */
+font-size: 16px;
+padding-top: 10px;
+}
+
+.panel-title {
+color: #424242;
+font-size: 20px;
+border-bottom: 2px solid #424242;
+}
+
+.title_instruction {
+color: white;
+padding-left: 74px;
+font-size: 45px;
+margin-bottom: 0;
+border-bottom: 2px solid;
+}
+
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.panel-heading-three {
+  background-color: white;
+  border: 3px solid white;
+  height: 40px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  text-align: center;
+  padding: 4px;
+}
+
+.row.profile-grid {
+  text-align: center;
+  font-family: 'Droid Mono Sans';
+  font-size: 15px;
+  padding: 5px;
+}
+
+.col-md-4.profile-grid {
+  margin-bottom: 10px;
+  color: #FFFFFF;
+}
+
+.logged-in-profile {
+  font-family: 'Arial';
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+  color: #FF9D2E;
+}
+
+.profile-centering {
+  text-align: center;
+  font-size: 12px;
+}
+
+
+.image-profile-thumbs {
+  height: 140px;
+  width: 140px;
+  overflow: hidden;
+
+}
+
+.panel.panel-login-top-left {
+    border-radius: 10px;
+    /*height: 80px;*/
+    margin-left: 35px;
+    background: rgba(46, 46, 46, 0.9);
+
+}
+
+.container.current_projects_grid {
+    border-radius: 10px;
+    background: rgba(46, 46, 46, 0.9);
+    width: 700px;
+    margin-right: 39px;
+    position: absolute;
+    left: 400px;
+    top: 0px;
+}
+
+.panel.hidden_shit_balls {
+    border-radius: 10px;
+    height: 150px;
+    margin-left: 35px;
+    background: transparent;
+}
+/*.panel-default>.panel-heading {
+color: #333;
+background-color: none;
+border-color: none;
+}
+
+/*results page*/
+
+.container.result {
+padding-top: 15px;
+padding-bottom: 100px;
+border-radius: 5px;
+border: solid white;
+top: 66px;
+left: 55px;
+position: absolute;
+background: rgba(46, 46, 46, 0.9);
+}
+
+.result_one {
+  background: #E9E9E9;
+  margin-right: 39px;
+  margin: 10px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+}
+
+.image-results-thumbs {
+  height: 220px;
+  width: 220px;
+  overflow: hidden;
+}
+
+.results-heading {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 4px;
+}
+
+.col-md-4.results-grid {
+  margin-top: 10px;
+  font-family: 'Arial';
+  color: white;
+  font-size: 16px;
+  padding: 3px;
+}
+
+.logo-profile {
+  height: 200px;
+  width: 200px;
+}
+
+/*.stupid-text {
+  color: #FF9D2E;
+}*/
+
+.myprofile-heading {
+  text-align: center;
+  color: white;
+  padding: 4px;
+}
+
+.material_list_font {
+  font-family: 'Arial';
+  color: white;
+  /*font-weight: bold;*/
+  font-size: 16px;
+}
+
+.button.submit {
+left: -24px;
+width: 64px;
+}
+
+p {
+margin-left: 20px;
+margin-top: -6px;
+}
+
+.submit.find {
+top: 114px;
+left: -227px;
+width: 105px;
+}
+
+.title.find {
+position: absolute;
+left: 410px;
+top: 130px;
+border: 2px solid white;
+color: white;
+padding-left: 20px;
+padding-right: 20px
+}
+
+
+.panel-body {
+padding: 15px;
+padding-top: 0px;
+}
+
+

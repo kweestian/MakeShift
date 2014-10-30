@@ -1,0 +1,51 @@
+<body>
+<div class="container overall">
+  <div class="col-md-4">
+
+    <form action ='/project' method='post'>
+      <div class="panel panel-default create2">
+        <div class="panel-body">
+          <h3 class="instruction-heading">Add Project Image</h3>
+            <input name="photo" class="textbox"type="text" placeholder="Image URL"> 
+        </div>
+      </div>
+
+
+    <div class="panel panel-default create1">
+        <h3 class="instruction-heading">Materials & Type</h3>
+          <select name="materials[name][]" class='material-type' multiple>
+          <% @materials.each do |x| %>
+            <option value="<%=x.id%>"><%=x.name%></option>
+          <%end%>
+          </select>
+          <select name="types[name][]" class = 'material-type' multiple>
+          <% @types.each do |x| %>
+            <option value="<%=x.id%>"><%=x.name%></option>
+          <%end%>
+          </select>
+    </div>
+
+
+    <div class="container create_page">
+
+      <h3 class="instruction-heading">Add Your Project Instructions Here</h3>
+          <textarea rows="5" cols="33" name="steps[instruction][]" type='text' placeholder="step 1"></textarea>
+          <textarea rows="5" cols="33" name="steps[instruction][]" type='text' placeholder="step 2"></textarea>
+          <textarea rows="5" cols="33" name="steps[instruction][]" type='text' placeholder="step 3"></textarea>
+          <textarea rows="5" cols="33" name="steps[instruction][]" type='text' placeholder="step 4"></textarea>
+          <textarea rows="5" cols="33" name="steps[instruction][]" type='text' placeholder="step 5"></textarea>
+          <textarea rows="5" cols="33" name="steps[instruction][]" type='text' placeholder="step 6"></textarea>
+          <input class="textbox" name="name" type='text' placeholder="Project Name">
+          <input class="button submit" type='submit'>
+    </div>
+    </form>
+
+  </div>
+</div>
+
+
+
+</body>
+
+
+

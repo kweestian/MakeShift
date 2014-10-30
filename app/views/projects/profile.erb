@@ -1,0 +1,43 @@
+<body>
+<div class="container overall">
+  <div class="col-md-4">
+
+    <form action ='/project' method='post'>
+      <div class="panel panel-login-top-left">
+        <div class="panel-body">
+        
+          <h3 class="myprofile-heading">My Profile</h3>
+            <!-- <h4 class="profile-centering">Logged in as:</h4> -->
+            <h2 class="logged-in-profile"><%=session[:user]%></h2>
+        </div>
+      </div>
+
+
+    <div class="panel hidden_shit_balls">
+<!-- 
+      <img class="logo-profile" src="./app/views/images/makeshift.jpg">
+      
+          -->
+    </div>
+
+
+    <div class="container current_projects_grid">
+
+      <h3 class="myprofile-heading">Projects I'm Working On</h3>
+        <div class="row profile-grid">
+        
+            <% @current.each do |x| %>
+            <div class="col-md-4 profile-grid">
+              <a href="/project/<%=x.id%>"><img class="image-profile-thumbs"src= "<%= x.photo %>"></a><br>
+              <%= x.name %>
+            </div>
+            <%end%>
+          
+        </div>
+    </div>
+    </form>
+
+  </div>
+</div>
+  
+</body>

@@ -1,0 +1,36 @@
+<div class="container cover">
+	<!-- <div class="row find"> -->
+	<div class ="title find"> <h1>Find new projects!</h1></div>
+		<form name="input" action="/find" method="post">
+			<div class="col-md-4 row-padded border-radius find1"> 
+				<div class="panel panel-primary">
+					<div class="panel-heading-three">
+						<h2 class="panel-title">Search</h2>
+
+					</div>
+					<div class="panel-body-checked">
+						<input id="form_array" type="hidden" name="array_data" value="">
+						<input type="submit" class ="submit find" value="SEARCH!">
+					</div>
+				</div>
+				</form>
+			<form name="input" action="/find" method="get">
+				<div class="panel panel-success">
+					<div class="panel-heading-three">
+						<h2 class="panel-title">Material</h2>
+					</div>
+					<div class="panel-body" style="min-height: 100px; max-height: 100px; overflow-y: scroll">
+						<% @material.each do |m| %> 
+						<div class="checker">
+							<input type="checkbox" class="checkboxes" value="<%= m.name %>" name="<%= m.id %>" >
+							<%= m.name %> 
+						</div>
+						<% end %>
+					</div>
+				</div>
+			</div>
+		</form>
+	<!-- </div> -->
+</div>
+
+

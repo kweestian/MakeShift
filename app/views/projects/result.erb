@@ -1,0 +1,23 @@
+<div class="container result">
+  <form class="display" role="form" action="/result" method="get">
+   <!--  <div class = "result_one"> -->
+    <div class="container results-grid">
+      <h3 class="results-heading">WE FOUND THESE PROJECTS FOR YOU:</h3>
+        <div class="row profile-grid">
+          <% @search_projects.each do |m| %>
+              <div class="col-md-4 results-grid">
+             <a href="/project/<%=m.id%>"><img class="image-results-thumbs"src= "<%= m.photo %>"></a><br> 
+          <%= m.name %>  
+ <!--              <input class="button submit" type="submit"> -->
+            </div>
+      <% end %>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+   
+        
+           
+           
